@@ -48,7 +48,7 @@ void enqueue()
     }
     else
     {
-        if(rear==NULL)               //if only one element is there
+        if(rear==NULL)               //if no element in enqueued yet
         {
             printf("Enter data:\n"); 
             scanf("%d",&new->data);
@@ -58,7 +58,7 @@ void enqueue()
         }
         else 
         {
-            printf("Enter data:\n");   //if some elements are there
+            printf("Enter data:\n");   //if some elements are already there
             scanf("%d",&new->data);
             new->next = NULL;
             rear->next = new;
